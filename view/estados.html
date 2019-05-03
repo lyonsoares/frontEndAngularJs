@@ -1,0 +1,43 @@
+
+
+ <nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">
+      Bootstrap
+    </a>
+  </nav>
+  </nav>
+
+<body ng-controller="clienteController">
+  <div class="jumbotron">
+    <div class="container">
+      <div class="col-md-6 offset-md-3">
+        <div class="card">
+          <div class="card-header">
+            <div class="float-left">
+              <h4 align="center">Estados API Externa</h4>
+            </div>
+
+            <div class="float-right">
+              <button type="submit" class="btn btn-primary" ng-click='salvar()'>Cadastrar Estados</button>
+            </div>
+          </div>
+        </div>
+
+        <table class="table table-hover table-striped table-bordered">
+
+          <th>Estado</th>
+          <th>Sigla</th>
+
+
+          <tr ng-repeat="estadosTabela in estadosApiE | filter:pesquisacliente">
+            <td> {{estadosTabela.nome}} </td>
+            <td> {{estadosTabela.sigla}} </td>
+          </tr>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>

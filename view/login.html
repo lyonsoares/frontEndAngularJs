@@ -1,0 +1,46 @@
+<nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">
+    Bootstrap
+  </a>
+</nav>
+
+<body ng-controller="loginController" bgcolor="#e9ecef">
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="col-md-6 offset-md-3">
+
+
+        <div class="card">
+          <div class="card-header">
+            <h4 align="center">Login</h4>
+          </div>
+          <div class="card-body">
+            <form class="needs-validation" novalidate>
+              <div class="form-group">
+
+                <input type="text" class="form-control" id="user" placeholder="Usuário" ng-model='user.user' required>
+
+              </div>
+
+              <div class="form-group">
+
+
+                <input type="password" class="form-control" id="password" placeholder="Password"
+                  ng-model='user.password' required>
+              </div>
+              <div class="form-check">
+
+              </div>
+              <button type="submit" class="btn btn-primary" ng-click='logar()'>Logar</button>
+            </form>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
